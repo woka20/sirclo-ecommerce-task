@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option go_package = "../protos/product";
+
+package protocols;
+
+message ProductQueryRequest{
+  int32 ID = 1;
+}
+
+message ProductResponse{
+  int32 ID = 1;
+  string Name = 2;
+  string Description = 3;
+  int32 Stock = 4;
+  double Price = 5;
+}
+
+message ProductListResponse{
+  repeated ProductResponse ProductList = 1;
+}
+
+service ProductService {
+  rpc FindByID (ProductQueryRequest) returns (ProductResponse);
+  rpc FindAll (ProductQueryRequest) returns (stream ProductResponse);
+}

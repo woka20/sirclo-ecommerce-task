@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package customer;
+
+option go_package = "../protos/customer";
+
+message QueryRequest{
+  string ID = 1;
+  string Email = 2;
+}
+
+message CustomerRequest{
+  string ID = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string Email = 4;
+  string Password = 5;
+  string BirthDate = 6;
+}
+
+message CustomerResponse{
+  string ID = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string Email = 4;
+  string Password = 5;
+  string BirthDate = 6;
+  string CreatedAt = 7;
+  string UpdatedAt = 8;
+}
+
+service CustomerService {
+  rpc Save (CustomerRequest) returns (CustomerResponse);
+  rpc FindByID (QueryRequest) returns (stream CustomerResponse);
+  rpc FindByEmail (QueryRequest) returns (stream CustomerResponse);
+}
