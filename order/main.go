@@ -89,8 +89,8 @@ func main() {
 
 	r.Handle("/api/me", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.Me()))).Methods("GET")
 
-	r.Handle("/api/products", middle.LogRequest(orderHttpHandler.GetProducts())).Methods("GET")
-	r.Handle("/api/products/{id}", middle.LogRequest(orderHttpHandler.GetProduct())).Methods("GET")
+	r.Handle("/api/products", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.GetProducts()))).Methods("GET")
+	r.Handle("/api/products/{id}", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.GetProduct()))).Methods("GET")
 
 	http.ListenAndServe(":3004", r)
 }

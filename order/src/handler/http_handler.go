@@ -32,7 +32,7 @@ func (h *HttpOrderHandler) Me() http.Handler {
 			return
 		}
 
-		memberID := req.Header.Get("MemberId")
+		memberID := req.Header.Get("CustomerId")
 
 		memberResult := <-h.orderUseCase.FindMemberByID(memberID)
 
@@ -100,7 +100,7 @@ func (h *HttpOrderHandler) GetProducts() http.Handler {
 			return
 		}
 
-		memberID := req.Header.Get("MemberId")
+		memberID := req.Header.Get("CustomerId")
 
 		fmt.Println(memberID)
 
