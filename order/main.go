@@ -25,12 +25,16 @@ func main() {
 		os.Exit(2)
 	}
 
+	confirm, ok := os.LookupEnv("SIGNATURE")
+
 	// publicKey, err := config.InitPublicKey()
 
 	if err != nil {
 		fmt.Printf("Error %e", err.Error())
 		os.Exit(1)
 	}
+
+	publicKey := []byte(confirm)
 
 	// membership GRPC Host
 	grpcCustomerHost, ok := os.LookupEnv("CUSTOMER_GRPC_HOST")
@@ -83,7 +87,7 @@ func main() {
 
 	r := mux.NewRouter()
 
-	// r.Handle("/api/me", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.Me()))).Methods("GET")
+	r.Handle("/api/me", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.Me()))).Methods("GET")
 
 	r.Handle("/api/products", middle.LogRequest(orderHttpHandler.GetProducts())).Methods("GET")
 	r.Handle("/api/products/{id}", middle.LogRequest(orderHttpHandler.GetProduct())).Methods("GET")
