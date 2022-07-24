@@ -11,6 +11,7 @@ import (
 	"sirclo-ecommerce-task/auth/src/model"
 	"sirclo-ecommerce-task/auth/src/usecase"
 
+	configEnv "github.com/joho/godotenv"
 	// "github.com/golang-jwt/jwt"
 	jwt "github.com/dgrijalva/jwt-go"
 )
@@ -51,11 +52,13 @@ func (a *HttpAuthHandler) HandlerLogin() http.Handler {
 			return
 		}
 
-		// err = configEnv.Load(".env")
-		// if err != nil {
-		// 	fmt.Printf(".env is not loaded: %s", err.Error())
-		// 	os.Exit(2)
-		// }
+		if !_testing {
+			err = configEnv.Load(".env")
+			if err != nil {
+				fmt.Printf(".env is not loaded: %s", err.Error())
+				os.Exit(2)
+			}
+		}
 
 		appName, ok := os.LookupEnv("APPLICATION_NAME")
 		fmt.Println(appName)
