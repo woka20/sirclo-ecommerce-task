@@ -18,7 +18,7 @@ func main() {
 	authUseCase := usecase.NewAuthUseCase(identityQuery)
 
 	authHttp := handler.NewHttpAuthHandler(authUseCase)
-	r.Handle("/api/login", middle.LogRequest(authHttp.HandlerLogin()))
+	r.Handle("/api/login", middle.LogRequest(authHttp.HandlerLogin())).Methods("POST")
 
 	http.ListenAndServe(":3009", r)
 
