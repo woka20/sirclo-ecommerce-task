@@ -39,6 +39,7 @@ func main() {
 		fmt.Printf("Error create grpc server: %s", err.Error())
 		os.Exit(1)
 	}
+	fmt.Printf("Server Customer Running")
 
 	err = grpcServer.Serve(GrpcPortDefault)
 
@@ -46,4 +47,5 @@ func main() {
 		fmt.Printf("Error in Startup: %s", err.Error())
 		os.Exit(1)
 	}
+
 }

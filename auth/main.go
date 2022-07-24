@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"sirclo-ecommerce-task/auth/db"
 	"sirclo-ecommerce-task/auth/handler"
@@ -21,5 +22,7 @@ func main() {
 	r.Handle("/api/login", middle.LogRequest(authHttp.HandlerLogin())).Methods("POST")
 
 	http.ListenAndServe(":3009", r)
+
+	fmt.Printf("Server Auth Running")
 
 }

@@ -15,6 +15,7 @@ import (
 )
 
 func main() {
+
 	err := configEnv.Load(".env")
 	if err != nil {
 		fmt.Println(".env is not loaded properly")
@@ -35,11 +36,13 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error create grpc server: %s", err.Error())
 		os.Exit(1)
+
 	}
+	fmt.Printf("Server  Product Running.....")
 
 	err = grpcServer.Serve(GrpcPortDefault)
 
-	if err != nil {
+	if err == nil {
 		fmt.Printf("Error in Startup: %s", err.Error())
 		os.Exit(1)
 	}

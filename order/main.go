@@ -93,4 +93,6 @@ func main() {
 	r.Handle("/api/products/{id}", middle.LogRequest(middle.Bearer(publicKey, orderHttpHandler.GetProduct()))).Methods("GET")
 
 	http.ListenAndServe(":3004", r)
+	fmt.Printf("Server Order Running")
+
 }
