@@ -17,8 +17,6 @@ COPY *.go ./
 RUN apk update && apk add --no-cache $BUILD_PACKAGES \
   && apk del $BUILD_PACKAGES
 
-EXPOSE 3002
-
 COPY .env $SRC_DIR.env
 
 RUN go mod init github.com/woka20/sirclo-ecommerce-task/products
