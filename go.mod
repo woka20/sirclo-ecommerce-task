@@ -1,4 +1,6 @@
-module sirclo-ecommerce-task
+module github.com/woka20/sirclo-ecommerce-task
+
+// replace github.com/woka20/sirclo-ecommerce-task
 
 go 1.16
 
