@@ -3,8 +3,8 @@ package usecase
 import (
 	"errors"
 
-	grpcService "sirclo-ecommerce-task/order/src/services/grpc"
-	serviceModel "sirclo-ecommerce-task/order/src/services/model"
+	grpcService "github.com/woka20/sirclo-ecommerce-task/order/src/services/grpc"
+	serviceModel "github.com/woka20/sirclo-ecommerce-task/order/src/services/model"
 )
 
 //orderUseCaseImpl

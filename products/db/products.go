@@ -3,7 +3,7 @@ package db
 import (
 	"encoding/json"
 
-	"sirclo-ecommerce-task/products/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/products/src/model"
 )
 
 var productData = []byte(`[{

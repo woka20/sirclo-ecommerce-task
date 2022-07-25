@@ -3,7 +3,7 @@ package query
 import (
 	"errors"
 
-	"sirclo-ecommerce-task/auth/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/model"
 )
 
 // identityQueryInMemory model, this private model implement IdentityQuery

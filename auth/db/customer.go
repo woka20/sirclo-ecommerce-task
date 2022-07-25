@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"sirclo-ecommerce-task/auth/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/model"
 )
 
 var customerData = []byte(`[{

@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"sirclo-ecommerce-task/auth/src/model"
-	"sirclo-ecommerce-task/auth/src/usecase"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/usecase"
 
 	configEnv "github.com/joho/godotenv"
 	// "github.com/golang-jwt/jwt"

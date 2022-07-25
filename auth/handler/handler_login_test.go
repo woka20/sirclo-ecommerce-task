@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"sirclo-ecommerce-task/auth/src/model"
-	"sirclo-ecommerce-task/auth/src/usecase"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/usecase"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

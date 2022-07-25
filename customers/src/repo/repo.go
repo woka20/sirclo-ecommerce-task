@@ -1,7 +1,7 @@
 package repo
 
 import (
-	"sirclo-ecommerce-task/customers/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/model"
 )
 
 // RepositoryResult model

@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strconv"
 
-	serviceModel "sirclo-ecommerce-task/order/src/services/model"
-	"sirclo-ecommerce-task/order/src/usecase"
-	"sirclo-ecommerce-task/order/utils"
+	serviceModel "github.com/woka20/sirclo-ecommerce-task/order/src/services/model"
+	"github.com/woka20/sirclo-ecommerce-task/order/src/usecase"
+	"github.com/woka20/sirclo-ecommerce-task/order/utils"
 
 	"github.com/gorilla/mux"
 )

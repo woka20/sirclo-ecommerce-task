@@ -3,7 +3,7 @@ package query
 import (
 	"errors"
 
-	"sirclo-ecommerce-task/customers/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/model"
 )
 
 // memberQueryInMemory model

@@ -3,9 +3,9 @@ package handler
 import (
 	"errors"
 
-	pb "sirclo-ecommerce-task/customers/protos/customer"
-	"sirclo-ecommerce-task/customers/src/model"
-	"sirclo-ecommerce-task/customers/src/usecase"
+	pb "github.com/woka20/sirclo-ecommerce-task/customers/protos/customer"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/usecase"
 
 	"golang.org/x/net/context"
 

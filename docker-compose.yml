@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  auth:
+    build: "./auth"
+    ports:
+      - "3009:3009"
+  customers:
+    build: "./customers"
+    ports:
+      - "3001:3001"
+  products:
+    build: "./products"
+    ports:
+      - "3002:3002"
+  order:
+    build: "./order"
+    ports:
+      - "3004:3004"

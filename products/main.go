@@ -6,12 +6,12 @@ import (
 
 	configEnv "github.com/joho/godotenv"
 
-	inMemDB "sirclo-ecommerce-task/products/db"
+	inMemDB "github.com/woka20/sirclo-ecommerce-task/products/db"
 
-	productGrpc "sirclo-ecommerce-task/products/grpc/server"
-	productHandlerPackage "sirclo-ecommerce-task/products/src/handler"
-	productQueryPackage "sirclo-ecommerce-task/products/src/query"
-	productUsecasePackage "sirclo-ecommerce-task/products/src/usecase"
+	productGrpc "github.com/woka20/sirclo-ecommerce-task/products/grpc/server"
+	productHandlerPackage "github.com/woka20/sirclo-ecommerce-task/products/src/handler"
+	productQueryPackage "github.com/woka20/sirclo-ecommerce-task/products/src/query"
+	productUsecasePackage "github.com/woka20/sirclo-ecommerce-task/products/src/usecase"
 )
 
 func main() {

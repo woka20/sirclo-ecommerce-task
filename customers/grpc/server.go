@@ -9,9 +9,9 @@ import (
 
 	// middleware "github.com/wuriyanto48/ecommerce-grpc-microservice/membership/grpc/middleware"
 
-	pbCustomer "sirclo-ecommerce-task/customers/protos/customer"
+	pbCustomer "github.com/woka20/sirclo-ecommerce-task/customers/protos/customer"
 
-	customerHandlerPackage "sirclo-ecommerce-task/customers/src/handler"
+	customerHandlerPackage "github.com/woka20/sirclo-ecommerce-task/customers/src/handler"
 
 	"google.golang.org/grpc"
 )

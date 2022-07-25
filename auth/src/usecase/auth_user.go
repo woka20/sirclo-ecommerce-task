@@ -2,8 +2,9 @@ package usecase
 
 import (
 	"errors"
-	"sirclo-ecommerce-task/auth/src/model"
-	"sirclo-ecommerce-task/auth/src/query"
+
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/query"
 )
 
 type authUseCaseImpl struct {

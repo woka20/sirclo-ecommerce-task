@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"sirclo-ecommerce-task/auth/db"
-	"sirclo-ecommerce-task/auth/handler"
 
-	"sirclo-ecommerce-task/auth/src/query"
-	"sirclo-ecommerce-task/auth/src/usecase"
-	"sirclo-ecommerce-task/order/middle"
+	"github.com/woka20/sirclo-ecommerce-task/auth/db"
+	"github.com/woka20/sirclo-ecommerce-task/auth/handler"
+
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/query"
+	"github.com/woka20/sirclo-ecommerce-task/auth/src/usecase"
+	"github.com/woka20/sirclo-ecommerce-task/order/middle"
 
 	"github.com/gorilla/mux"
 )

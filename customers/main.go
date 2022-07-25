@@ -6,13 +6,13 @@ import (
 
 	configEnv "github.com/joho/godotenv"
 
-	"sirclo-ecommerce-task/customers/db"
+	"github.com/woka20/sirclo-ecommerce-task/customers/db"
 
-	customerGrpc "sirclo-ecommerce-task/customers/grpc"
-	"sirclo-ecommerce-task/customers/src/handler"
-	"sirclo-ecommerce-task/customers/src/query"
-	"sirclo-ecommerce-task/customers/src/repo"
-	"sirclo-ecommerce-task/customers/src/usecase"
+	customerGrpc "github.com/woka20/sirclo-ecommerce-task/customers/grpc"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/handler"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/query"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/repo"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/usecase"
 )
 
 const GrpcPortDefault = 3001

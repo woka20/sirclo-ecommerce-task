@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"sirclo-ecommerce-task/customers/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/model"
 )
 
 // UseCaseResult model

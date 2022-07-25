@@ -2,7 +2,8 @@ package query
 
 import (
 	"errors"
-	"sirclo-ecommerce-task/products/src/model"
+
+	"github.com/woka20/sirclo-ecommerce-task/products/src/model"
 )
 
 type productQuery struct {

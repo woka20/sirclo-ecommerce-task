@@ -2,9 +2,10 @@ package usecase
 
 import (
 	"errors"
-	"sirclo-ecommerce-task/customers/src/model"
-	"sirclo-ecommerce-task/customers/src/query"
-	"sirclo-ecommerce-task/customers/src/repo"
+
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/query"
+	"github.com/woka20/sirclo-ecommerce-task/customers/src/repo"
 )
 
 type customerUseCaseImpl struct {

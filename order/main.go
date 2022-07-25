@@ -10,10 +10,10 @@ import (
 
 	// "github.com/wuriyanto48/ecommerce-grpc-microservice/order/middleware"
 
-	"sirclo-ecommerce-task/order/middle"
-	"sirclo-ecommerce-task/order/src/handler"
-	grpcService "sirclo-ecommerce-task/order/src/services/grpc"
-	"sirclo-ecommerce-task/order/src/usecase"
+	"github.com/woka20/sirclo-ecommerce-task/order/middle"
+	"github.com/woka20/sirclo-ecommerce-task/order/src/handler"
+	grpcService "github.com/woka20/sirclo-ecommerce-task/order/src/services/grpc"
+	"github.com/woka20/sirclo-ecommerce-task/order/src/usecase"
 )
 
 func main() {

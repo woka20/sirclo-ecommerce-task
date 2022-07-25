@@ -3,8 +3,8 @@ package usecase
 import (
 	"errors"
 
-	"sirclo-ecommerce-task/products/src/model"
-	"sirclo-ecommerce-task/products/src/query"
+	"github.com/woka20/sirclo-ecommerce-task/products/src/model"
+	"github.com/woka20/sirclo-ecommerce-task/products/src/query"
 )
 
 // productUseCaseImpl model

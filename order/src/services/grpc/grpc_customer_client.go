@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	pb "sirclo-ecommerce-task/order/protos/customer"
-	"sirclo-ecommerce-task/order/src/services/model"
+	pb "github.com/woka20/sirclo-ecommerce-task/order/protos/customer"
+	"github.com/woka20/sirclo-ecommerce-task/order/src/services/model"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
