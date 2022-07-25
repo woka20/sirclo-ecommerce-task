@@ -33,12 +33,7 @@ func (s *Server) Serve(port uint) error {
 		return err
 	}
 
-	server := grpc.NewServer(
-	//Unary interceptor
-	// grpc.UnaryInterceptor(s.grpcMiddleware.Auth),
-	//Stream interceptor
-	// grpc.StreamInterceptor(s.grpcMiddleware.AuthStream),
-	)
+	server := grpc.NewServer()
 
 	//Register all sub server here
 	// pbCategory.RegisterCategoryServiceServer(server, s.categoryGrpcHandler)
