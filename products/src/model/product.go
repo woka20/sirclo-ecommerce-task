@@ -15,6 +15,7 @@ type Product struct {
 	UpdatedAt   time.Time `json:"updatedAt"`
 }
 
+//
 // Products type
 type Products []Product
 
