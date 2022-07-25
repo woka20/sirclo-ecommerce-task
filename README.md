@@ -14,3 +14,9 @@ Steps:
 2. Run "cd sirclo-ecommerce-task" in terminal
 3. Run "docker-compose up" in terminal
 4. Download postman collection to test all the api
+
+
+UNIT TEST
+
+1. Run 'cd .\auth\handler\'
+2. Run 'go test -v'
