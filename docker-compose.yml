@@ -6,10 +6,12 @@ services:
     ports:
       - "3009:3009"
   customers:
+    container_name: grpc-customer
     build: "./customers"
     ports:
       - "3001:3001"
   products:
+    container_name: grpc-product
     build: "./products"
     ports:
       - "3002:3002"
